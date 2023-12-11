@@ -36,18 +36,18 @@ document.addEventListener("DOMContentLoaded", function () {
 //-------cuando parrafo section3-p no es visible se oculta y cuando es visible vuelve a aparecer-----//
 document.addEventListener("DOMContentLoaded", function () {
   const section3 = document.getElementById('section3');
-  const section3_p = document.getElementById('section3_p');
+  const project_p = document.getElementById('project_p');
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         // Solo aplica la animación si el elemento es completamente visible
-        section3_p.style.transition = 'transform 1s ease-out';
-        section3_p.style.transform = 'translateX(0)';
+        project_p.style.transition = 'transform 1s ease-out';
+        project_p.style.transform = 'translateX(0)';
       } else {
         // Si no es visible, agrega un desplazamiento hacia la izquierda antes de desaparecer
-        section3_p.style.transition = 'transform 1s ease-out';
-        section3_p.style.transform = 'translateX(-130%)';
+        project_p.style.transition = 'transform 1s ease-out';
+        project_p.style.transform = 'translateX(-130%)';
       }
     });
   }, { threshold: 0.5 });
@@ -57,18 +57,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const section3 = document.getElementById('section3');
-  const section3_p = document.getElementById('section3_p2');
+  const project_p = document.getElementById('project_p2');
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         // Solo aplica la animación si el elemento es completamente visible
-        section3_p2.style.transition = 'transform 1s ease-out';
-        section3_p2.style.transform = 'translateX(0)';
+        project_p2.style.transition = 'transform 1s ease-out';
+        project_p2.style.transform = 'translateX(0)';
       } else {
         // Si no es visible, agrega un desplazamiento hacia la izquierda antes de desaparecer
-        section3_p2.style.transition = 'transform 1s ease-out';
-        section3_p2.style.transform = 'translateX(-130%)';
+        project_p2.style.transition = 'transform 1s ease-out';
+        project_p2.style.transform = 'translateX(-130%)';
       }
     });
   }, { threshold: 0.5 });
