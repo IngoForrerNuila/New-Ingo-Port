@@ -220,16 +220,18 @@ header {
     }
 
     .menu-cont{
+        display: flex;
         position: absolute; /* Utilizando Flexbox para alinear elementos en una fila */
         justify-content: space-around;
         background-color: transparent;
-        margin-top: 130%;
-        padding: 20px;   
+        margin-top: 125%;
+           
 
     }
 
     .menu-item{
-        font-size: 18px;
+        font-size: 16px;
+        padding: 10px;
 
     }
 
