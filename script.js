@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         // Si no es visible, agrega un desplazamiento hacia la izquierda antes de desaparecer
         section2_p.style.transition = 'transform 1s ease-out';
-        section2_p.style.transform = 'translateX(-10%)';
+        section2_p.style.transform = 'translateX(-100%)';
       }
     });
   }, { threshold: 0.5 });
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(section2);
 });
 
-
+//--------------texto o imagen desaparece y reinicia animacion cuando ya no es visible su contenedor-----//
 
 /*document.addEventListener("DOMContentLoaded", function () {
   const section2 = document.getElementById('section2');
