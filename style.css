@@ -91,7 +91,7 @@ header {
 }
 
 .section2 {
-    height: 15cm;
+    height: 100vh;
     width: 100vw; /* 100% del viewport width */
     position: relative; /* Asegura que el position absolute del cornered-logo sea relativo a este contenedor */
     display: flex;
@@ -103,12 +103,12 @@ header {
 }
 
 .section2_p{
-    color: #ffffff;
+    color: #45D8F3;
     font-size: 68px; /* Tamaño de fuente deseado */
     font-family: 'Interstate Mono'; /* Establece la fuente */
     margin: 0; /* Elimina el margen predeterminado del párrafo */
     margin-top: 100px;
-    margin-left: 80px;
+    margin-left: 70px;
     padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
     transform: translateX(-200%);
     transition: transform 1s ease-out;
@@ -242,10 +242,18 @@ header {
     }
 
     .section2_p{
+        position: absolute;
+        bottom: 50%;
         background-color: rgba(0, 0, 0, 0.5);
         margin-left: 4px;
         font-size: 22px; /* Tamaño de fuente deseado */
         color: #ffffff;
+    }
+
+    .menu-cont{
+        position: absolute;
+        bottom: 45%;
+
     }
 
     .menu-item{
