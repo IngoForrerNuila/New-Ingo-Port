@@ -9,6 +9,29 @@ document.addEventListener("DOMContentLoaded", function () {
         section2_p.style.transition = 'transform 1s ease-out';
         section2_p.style.transform = 'translateX(0)';
       } else {
+        // Si no es visible, agrega un desplazamiento hacia la izquierda antes de desaparecer
+        section2_p.style.transition = 'transform 1s ease-out';
+        section2_p.style.transform = 'translateX(-10%)';
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(section2);
+});
+
+
+
+/*document.addEventListener("DOMContentLoaded", function () {
+  const section2 = document.getElementById('section2');
+  const section2_p = document.getElementById('section2_p');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Solo aplica la animación si el elemento es completamente visible
+        section2_p.style.transition = 'transform 1s ease-out';
+        section2_p.style.transform = 'translateX(0)';
+      } else {
         // Si no es visible, reinicia la animación
         section2_p.style.transition = 'none';
         section2_p.style.transform = 'translateX(-100%)';
@@ -17,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, { threshold: 0.5 });
 
   observer.observe(section2);
-});
+});*/
 
 //----empezar animacion de section2_p al observar el div-------//
 
