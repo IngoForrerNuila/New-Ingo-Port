@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Ingo Portafolio</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="logo-mini" id="logo-mini" src="img/Ingo-logo-3.png" alt="" />
+    
+    </header>
+
+    <div class="section1" id="section1">
+
+        <a href="#section2" id="logo-link">
+            <img src="img/Ingo-logo-1.png" alt="Logo" class="centered-logo">
+        </a>
+        
+    </div>
+
+    <div class="section2" id="section2">
+        
+        <div class="section2-text-cont" id="section2-text-cont">
+            <div class="section2_p" id="section2_p">
+                Hallo, ich bin Ingo Forrer <br>
+                und ich helfe gerne<br>
+                Menschen, ihre Ziele zu erreichen.    
+            </div>
+
+            <div class="menu-cont">
+                <a href="bio-ingo.html" class="menu-item">Stellt mich ein</a>
+                <a href="bio-ingo.html" class="menu-item">Biografie</a>
+                <a href="bio-ingo.html" class="menu-item">Scroll weiter</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section3">
+       
+    </div>
+
+    <div class="section4">
+        
+    </div>
+
+    <div class="section5">
+        
+    </div>
+
+    <div class="section6">
+        
+    </div>
+
+    <div class="section7">
+        
+    </div>
+
+    <script>
+        //para scrolear abajo al clikear logo-centered//
+        document.getElementById('logo-link').addEventListener('click', function() {
+         document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
+     });
+    </script>
+
+    <script>
+     // JavaScript para posicionar la página en el primer div al recargar
+     document.addEventListener("DOMContentLoaded", function() {
+     document.querySelector("#section1").scrollIntoView();
+     });
+    </script>
+
+</body>
+</html>
