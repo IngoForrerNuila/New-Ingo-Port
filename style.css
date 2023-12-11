@@ -104,7 +104,7 @@ header {
 
 .section2_p{
     color: #45D8F3;
-    font-size: 68px; /* Tamaño de fuente deseado */
+    font-size: 58px; /* Tamaño de fuente deseado */
     font-family: 'Interstate Mono'; /* Establece la fuente */
     margin: 0; /* Elimina el margen predeterminado del párrafo */
     margin-top: 100px;
@@ -123,7 +123,7 @@ header {
     display: flex; /* Utilizando Flexbox para alinear elementos en una fila */
     justify-content: space-around;
     background-color: transparent;
-    padding: 10px;
+    padding: 20px;
     position: relative;
          
 }
@@ -131,7 +131,7 @@ header {
 .menu-item {
     font-family: 'Interstate Mono';
     color: #45D8F3;
-    font-size: 28px;
+    font-size: 25px;
     transition: color 0.3s, text-decoration 0.3s;
     position: relative;
     text-decoration: none;
@@ -223,7 +223,8 @@ header {
         position: absolute; /* Utilizando Flexbox para alinear elementos en una fila */
         justify-content: space-around;
         background-color: transparent;
-        margin-top: 130%;   
+        margin-top: 130%;
+        padding: 20px;   
 
     }
 

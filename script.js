@@ -1,3 +1,5 @@
+
+//-------cuando parrafo no es visible se oculta y cuando es visible vuelve a aparecer-----//
 document.addEventListener("DOMContentLoaded", function () {
   const section2 = document.getElementById('section2');
   const section2_p = document.getElementById('section2_p');
@@ -72,6 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-//-----hacer que section2-P desaparesca al section1 ser visible------//
+
 
 
