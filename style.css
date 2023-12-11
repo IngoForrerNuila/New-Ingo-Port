@@ -118,14 +118,12 @@ header {
     transform: translateX(0);
 }
 
-
 .menu-cont {
     display: flex; /* Utilizando Flexbox para alinear elementos en una fila */
     justify-content: space-around;
     background-color: transparent;
     padding: 20px;
-    position: relative;
-         
+    position: relative;    
 }
 
 .menu-item {
@@ -134,8 +132,7 @@ header {
     font-size: 25px;
     transition: color 0.3s, text-decoration 0.3s;
     position: relative;
-    text-decoration: none;
-       
+    text-decoration: none;   
 }
 
 .menu-item:hover {
@@ -276,7 +273,6 @@ header {
     justify-content: left;
     height: 100vh;
     width: 100vw;
-    
     }
 
     .menu-cont{
@@ -318,8 +314,7 @@ header {
         font-size: 16px;
         transition: color 0.3s, text-decoration 0.3s;
         position: relative;
-        text-decoration: none;
-           
+        text-decoration: none;     
     }
 
     .project_p{
