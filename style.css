@@ -301,8 +301,6 @@ header {
     }
 
     .section3 {
-        height: 100vh;
-        width: 100vw; /* 100% del viewport width */
         display: flex;
         align-items: left;
         justify-content: left;
@@ -311,7 +309,6 @@ header {
         background-size: cover; /* Cubre toda la pantalla */
         background-position: center; /* Centra la imagen en el fondo */
         background-repeat: no-repeat; /* No repite la imagen de fondo */
-        border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
     }
 
     .sp3-item {
@@ -331,7 +328,7 @@ header {
         margin: 5%; /* Elimina el margen predeterminado del párrafo */
         margin-top: 48vh;
         margin-left: 0;
-        max-width: 90vw;
+        max-width: 95vw;
         padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
         transform: translateX(-200%);
         transition: transform 1s ease-out;
@@ -346,10 +343,32 @@ header {
         margin: 0; /* Elimina el margen predeterminado del párrafo */
         margin-bottom: 80%;
         margin-left: 0;
-        max-width: 60vw;
+        max-width: 80vw;
         padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
         transform: translateX(-200%);
         transition: transform 5s ease-out;
+    }
+
+    .section4 {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        z-index: 1;
+        background-image: url('img/chibistories-porttrait.png'); /* Ruta de tu imagen de fondo */
+        background-size: cover; /* Cubre toda la pantalla */
+        background-position: center; /* Centra la imagen en el fondo */
+        background-repeat: no-repeat; /* No repite la imagen de fondo */
+    }
+
+    .section5 {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        z-index: 1;
+        background-image: url('img/fanfest-porttrait-phone.png'); /* Ruta de tu imagen de fondo */
+        background-size: cover; /* Cubre toda la pantalla */
+        background-position: center; /* Centra la imagen en el fondo */
+        background-repeat: no-repeat; /* No repite la imagen de fondo */
     }
     
 }
@@ -398,8 +417,6 @@ header {
     }
 
     .section3 {
-        height: 100vh;
-        width: 100vw; /* 100% del viewport width */
         display: flex;
         align-items: left;
         justify-content: left;
@@ -408,6 +425,28 @@ header {
         background-position: center; /* Centra la imagen en el fondo */
         background-repeat: no-repeat; /* No repite la imagen de fondo */
         border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
+    }
+
+    .section4 {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        background-image: url('img/chibistories-porttrait.png'); /* Ruta de tu imagen de fondo */
+        background-size: cover; /* Cubre toda la pantalla */
+        background-position: center; /* Centra la imagen en el fondo */
+        background-repeat: no-repeat; /* No repite la imagen de fondo */
+        border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
+    }
+
+    .section5 {
+        height: 100vh;
+        width: 100vw; /* 100% del viewport width */
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        background-image: url('img/fanfest-porttrait-phone.png'); /* Ruta de tu imagen de fondo */
+        
+        
     }
 
     .sp3-item {
