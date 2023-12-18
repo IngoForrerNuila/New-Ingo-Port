@@ -164,10 +164,26 @@ header {
     cursor: pointer;
 }
 
+.circle-div {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 45%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
 .arrow-down-div {
     position: fixed;
     bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
     left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sq-div {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 55%;
     transform: translateX(-50%);
     cursor: pointer;
 }

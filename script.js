@@ -162,18 +162,47 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(section3);
 });
 
-// ---Funcion para los Arrows que se desplacen de Principio a Fin! ---//
+//--------------funcion arrow-up---------------//
 
-document.addEventListener("DOMContentLoaded", function () {
-  const arrowUp = document.querySelector('.arrow-up-div');
-  const arrowDown = document.querySelector('.arrow-down-div');
+document.addEventListener('DOMContentLoaded', function() {
+  var arrows = document.querySelector('#arrow-up');
+  var section2 = document.getElementById('section2');
 
-  arrowUp.addEventListener('click', function() {
-    document.querySelector("#section1").scrollIntoView({ behavior: 'smooth' });
+  arrows.addEventListener('click', function() {
+    section2.scrollIntoView({ behavior: 'smooth' });
   });
+});
 
-  arrowDown.addEventListener('click', function() {
-    document.querySelector("#section5").scrollIntoView({ behavior: 'smooth' });
+//--------------funcion circle---------------//
+
+document.addEventListener('DOMContentLoaded', function() {
+  var arrows = document.querySelector('#circle');
+  var section1 = document.getElementById('section3');
+
+  arrows.addEventListener('click', function() {
+    section3.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+//--------------funcion arrow-down---------------//
+
+document.addEventListener('DOMContentLoaded', function() {
+  var arrows = document.querySelector('#arrow-down');
+  var section4 = document.getElementById('section4');
+
+  arrows.addEventListener('click', function() {
+    section4.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+//--------------funcion arrow-down---------------//
+
+document.addEventListener('DOMContentLoaded', function() {
+  var arrows = document.querySelector('#sq');
+  var section5 = document.getElementById('section5');
+
+  arrows.addEventListener('click', function() {
+    section5.scrollIntoView({ behavior: 'smooth' });
   });
 });
 
