@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const section3 = document.getElementById('section4');
   const section3_p = document.getElementById('section4_p');
-
+  
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -101,6 +101,27 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const section3 = document.getElementById('section4');
   const section3_p2 = document.getElementById('section4_p2');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Solo aplica la animación si el elemento es completamente visible
+        section3_p2.style.transition = 'transform 1s ease-out';
+        section3_p2.style.transform = 'translateX(0)';
+      } else {
+        // Si no es visible, agrega un desplazamiento hacia la izquierda antes de desaparecer
+        section3_p2.style.transition = 'transform 1s ease-out';
+        section3_p2.style.transform = 'translateX(-130%)';
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(section3);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const section3 = document.getElementById('section4');
+  const section3_p2 = document.getElementById('section4_p3');
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
