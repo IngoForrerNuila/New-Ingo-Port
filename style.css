@@ -164,11 +164,11 @@ header {
     cursor: pointer;
 }
 
-.arrow-up-div-hidden {
+.arrow-up-1 {
     visibility: hidden;
     position: fixed;
-    top: 10px; 
-    left: 50%;
+    bottom: 10px; 
+    left: 44%;
     transform: translateX(-50%);
     cursor: pointer;
 }
@@ -338,10 +338,9 @@ header {
         visibility: hidden;
     } 
 
-    .arrow-up-div-hidden {
+    .arrow-up-1 {
         visibility: visible;
-        position: fixed;
-        margin-top: 94.1vh;
+        bottom: 10px; 
         left: 30%;
     }
  

@@ -205,11 +205,22 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+//--------------funcion arrow 1---------------//
+
+document.addEventListener('DOMContentLoaded', function() {
+  var arrows = document.querySelector('#arrow-up-1');
+  var section2 = document.getElementById('section2');
+
+  arrows.addEventListener('click', function() {
+    section2.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 //--------------funcion circle---------------//
 
 document.addEventListener('DOMContentLoaded', function() {
   var arrows = document.querySelector('#circle');
-  var section1 = document.getElementById('section3');
+  var section3 = document.getElementById('section3');
 
   arrows.addEventListener('click', function() {
     section3.scrollIntoView({ behavior: 'smooth' });
