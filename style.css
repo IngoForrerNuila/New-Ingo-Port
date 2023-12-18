@@ -87,7 +87,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #45D8F3;
-    z-index: 3;
+    z-index: 5;
 }
 
 .section2 {
@@ -247,7 +247,7 @@ header {
     display: flex;
     align-items: left;
     justify-content: left;
-    z-index: 4;
+    z-index: 3;
     Background-color: transparent;
     border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
     background-image: url('img/chibistories-porttrait.png'); /* Ruta de tu imagen de fondo */
@@ -263,7 +263,7 @@ header {
     display: flex;
     align-items: left;
     justify-content: left;
-    z-index: 4;
+    z-index: 3;
     Background-color: transparent;
     border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
     background-image: url('img/fanfest-porttrait.png'); /* Ruta de tu imagen de fondo */
@@ -273,6 +273,7 @@ header {
 }
 
 .section6 {
+    z-index: 3;
     height: 15cm;
     width: 100vw; /* 100% del viewport width */
     display: flex;
@@ -283,6 +284,7 @@ header {
 }
 
 .section7 {
+    z-index: 3;
     height: 15cm;
     width: 100vw; /* 100% del viewport width */
     display: flex;
@@ -400,10 +402,10 @@ header {
     }
 
     .section4 {
+        z-index: 0;
         display: flex;
         align-items: left;
         justify-content: left;
-        z-index: 1;
         background-image: url('img/chibistories-porttrait-phone.png'); /* Ruta de tu imagen de fondo */
         background-size: cover; /* Cubre toda la pantalla */
         background-position: center; /* Centra la imagen en el fondo */
@@ -411,10 +413,10 @@ header {
     }
 
     .section5 {
+        z-index: 0;
         display: flex;
         align-items: left;
         justify-content: left;
-        z-index: 1;
         background-image: url('img/fanfest-porttrait-phone.png'); /* Ruta de tu imagen de fondo */
         background-size: cover; /* Cubre toda la pantalla */
         background-position: center; /* Centra la imagen en el fondo */
