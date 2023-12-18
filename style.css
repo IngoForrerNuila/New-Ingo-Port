@@ -326,7 +326,7 @@ header {
     .arrow-up-div-hidden {
         visibility: visible;
         position: fixed;
-        top: 95.5%; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        margin-top: 94.1vh; /* Ajusta la distancia desde la parte superior según tus necesidades */
         left: 30%;
     }
  
@@ -459,6 +459,21 @@ header {
 
     body {
         background-position: right; /* Centra la imagen en el fondo */
+    }
+
+    .circle-div {
+        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        left: 40%;
+    }
+    
+    .arrow-down-div {
+        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        left: 50%;
+    }
+    
+    .sq-div {
+        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        left: 60%;
     }
 
     .section2{
