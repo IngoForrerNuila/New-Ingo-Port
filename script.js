@@ -162,6 +162,21 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(section3);
 });
 
+// ---Funcion para los Arrows que se desplacen de Principio a Fin! ---//
+
+document.addEventListener("DOMContentLoaded", function () {
+  const arrowUp = document.querySelector('.arrow-up-div');
+  const arrowDown = document.querySelector('.arrow-down-div');
+
+  arrowUp.addEventListener('click', function() {
+    document.querySelector("#section1").scrollIntoView({ behavior: 'smooth' });
+  });
+
+  arrowDown.addEventListener('click', function() {
+    document.querySelector("#section5").scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 // ---texto u objeto desaparece cuando contenedor ya no es visible para re iniciar la animacion---//
 
 /*document.addEventListener("DOMContentLoaded", function () {
