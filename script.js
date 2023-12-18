@@ -119,7 +119,6 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(section3);
 });
 
-
 //-------cuando parrafo section5-p no es visible se oculta y cuando es visible vuelve a aparecer-----//
 document.addEventListener("DOMContentLoaded", function () {
   const section3 = document.getElementById('section5');

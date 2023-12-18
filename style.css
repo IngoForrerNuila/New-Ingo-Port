@@ -164,10 +164,6 @@ header {
     cursor: pointer;
 }
 
-.arrow-up-hidden-div{
-    visibility: hidden;
-}
-
 .arrow-down-div {
     position: fixed;
     bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
@@ -177,14 +173,14 @@ header {
 }
 
 .arrows{
-    width: 1.0cm;
-    height: 1.0cm;
+    width: 0.5cm;
+    height: 0.5cm;
     animation: pulsate 1.5s infinite alternate; /* Define la animación llamada pulsate */
 }
 
 @keyframes pulsate {
     to {
-      transform: scale(1.4); /* Reduce el tamaño al final de la animación */
+      transform: scale(1.6); /* Reduce el tamaño al final de la animación */
     }
 }
 
@@ -313,24 +309,6 @@ header {
     justify-content: left;
     height: 100vh;
     width: 100vw;
-    }
-
-    .arrow-up-div {
-        visibility: hidden;
-    }
-
-    .arrow-up-hidden-div{
-        visibility: visible;
-        position: fixed;
-        bottom: 9px; /* Ajusta la distancia desde la parte superior según tus necesidades */
-        left: 40%;
-        transform: translateX(-50%);
-        cursor: pointer;
-    }
-
-    .arrow-down-div {
-        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
-        left: 60%;
     }
 
     .menu-cont{

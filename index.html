@@ -59,10 +59,6 @@
             </div>
         </div>
 
-        <div class="arrow-up-hidden-div" onclick="scrollToPrevious()">
-            <img src="img/arrow-up.png" class="arrows" alt="Flecha hacia arriba">
-        </div>
-
         <div class="arrow-down-div" onclick="scrollToNext()">
             <img src="img/arrow-down.png" class="arrows" alt="Flecha hacia abajo">
         </div>
@@ -126,25 +122,6 @@
 
 <!-- Esto Funciona para que los ARROWS FIXED escroleen Previamente o Continuamente --> 
 
-<script>
-    function scrollTo(direction) {
-        const currentPosition = window.scrollY;
-        const sections = document.querySelectorAll('[data-alt="sections"]');
-        const sectionArray = Array.from(sections);
-
-        let targetSection;
-
-        if (direction === 'previous') {
-            targetSection = sectionArray.reverse().find(section => section.getAttribute('data-alt') < currentPosition);
-        } else if (direction === 'next') {
-            targetSection = sectionArray.find(section => section.getAttribute('data-alt') > currentPosition);
-        }
-
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-</script>
 
 
 <!--<script>
