@@ -593,8 +593,14 @@ header {
         color: #ffffff;
         font-size: 18px; 
         margin: 0; 
-        margin-bottom: 5%;
+        margin-bottom: 3%;
         margin-left: 0;
+        max-width: 50vw;
+    }
+
+    .project_p3{
+        color: #ffffff;
+        font-size: 18px; 
         max-width: 50vw;
     }
     
