@@ -7,11 +7,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    background-image: url('img/background-ingo.png'); /* Ruta de tu imagen de fondo */
-    background-size: cover; /* Cubre toda la pantalla */
-    background-position: center; /* Centra la imagen en el fondo */
-    background-attachment: fixed; /* Hace que el fondo permanezca fijo */
-    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    background-image: url('img/background-ingo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
     
 }
 
@@ -34,25 +34,25 @@ body {
 }
 
 .centered-logo{
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
-    max-height: 100%; /* Ajusta la altura máxima de la imagen */
+    max-width: 100%; 
+    max-height: 100%; 
     
-    /* Agrega estas líneas para establecer el tamaño específico */
+    
     width: 3cm;
     height: 3cm;
 
     transform: translate(-50%, -50%);
 
-    z-index: 2; /* El logo estará en la parte superior */
+    z-index: 2; 
 
-    /* Agrega la animación, ajusta la duración y el retraso según tus preferencias */
-    animation: rotate 3.5s linear infinite, rotate-reset 3.5s linear infinite; /* 2s de rotación, se reinicia cada 20s */
+   
+    animation: rotate 3.5s linear infinite, rotate-reset 3.5s linear infinite; 
 }
 
-/* Define una animación adicional para reiniciar la rotación */
+
 @keyframes rotate-reset {
     to {
-        transform: rotate(-50deg); /* Reinicia la rotación a 0 grados */
+        transform: rotate(-50deg);
     }
 }
 
@@ -92,24 +92,24 @@ header {
 
 .section2 {
     height: 100vh;
-    width: 100vw; /* 100% del viewport width */
-    position: relative; /* Asegura que el position absolute del cornered-logo sea relativo a este contenedor */
+    width: 100vw; 
+    position: relative; 
     display: flex;
     align-items: left;
     justify-content: left;
     Background-color: transparent;
-    border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
+    border-bottom: 1px solid #ccc; 
     z-index: 1;
 }
 
 .section2_p{
     color: #45D8F3;
-    font-size: 58px; /* Tamaño de fuente deseado */
-    font-family: 'Interstate Mono'; /* Establece la fuente */
-    margin: 0; /* Elimina el margen predeterminado del párrafo */
+    font-size: 58px; 
+    font-family: 'Interstate Mono';
+    margin: 0; 
     margin-top: 100px;
     margin-left: 70px;
-    padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
+    padding: 10px; 
     transform: translateX(-200%);
     transition: transform 1s ease-out;
 }
@@ -119,7 +119,7 @@ header {
 }
 
 .menu-cont {
-    display: flex; /* Utilizando Flexbox para alinear elementos en una fila */
+    display: flex; 
     justify-content: space-around;
     background-color: transparent;
     padding: 20px;
@@ -142,23 +142,23 @@ header {
 
 .section3 {
     height: 100vh;
-    width: 100vw; /* 100% del viewport width */
-    position: relative; /* Asegura que el position absolute del cornered-logo sea relativo a este contenedor */
+    width: 100vw; 
+    position: relative;
     display: flex;
     align-items: left;
     justify-content: left;
     z-index: 4;
     Background-color: transparent;
-    border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
-    background-image: url('img/on-stage-portrait.png'); /* Ruta de tu imagen de fondo */
-    background-size: cover; /* Cubre toda la pantalla */
-    background-position: center; /* Centra la imagen en el fondo */
-    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    border-bottom: 1px solid #ccc; 
+    background-image: url('img/on-stage-portrait.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .arrow-up-div {
     position: fixed;
-    top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -167,7 +167,7 @@ header {
 .arrow-up-div-hidden {
     visibility: hidden;
     position: fixed;
-    top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    top: 10px; 
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -175,7 +175,7 @@ header {
 
 .circle-div {
     position: fixed;
-    bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    bottom: 10px; 
     left: 47%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -183,7 +183,7 @@ header {
 
 .arrow-down-div {
     position: fixed;
-    bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    bottom: 10px; 
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -191,7 +191,7 @@ header {
 
 .sq-div {
     position: fixed;
-    bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    bottom: 10px; 
     left: 53%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -200,12 +200,12 @@ header {
 .arrows{
     width: 0.5cm;
     height: 0.5cm;
-    animation: pulsate 1.5s infinite alternate; /* Define la animación llamada pulsate */
+    animation: pulsate 1.5s infinite alternate; 
 }
 
 @keyframes pulsate {
     to {
-      transform: scale(1.6); /* Reduce el tamaño al final de la animación */
+      transform: scale(1.6); 
     }
 }
 
@@ -227,13 +227,13 @@ header {
 .project_p{
     color: #ffffff;
     background-color: rgb(0, 0, 0);
-    font-size: 28px; /* Tamaño de fuente deseado */
-    font-family: 'Interstate Mono'; /* Establece la fuente */
-    margin: 0; /* Elimina el margen predeterminado del párrafo */
+    font-size: 28px; 
+    font-family: 'Interstate Mono'; 
+    margin: 0; 
     margin-top: 20vh;
     margin-left: 0;
     max-width: 40vw;
-    padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
+    padding: 10px;
     transform: translateX(-200%);
     transition: transform 1s ease-out;
 }
@@ -245,14 +245,14 @@ header {
 .project_p2{
     color: #ffffff;
     background-color: rgb(0, 0, 0);
-    font-size: 18px; /* Tamaño de fuente deseado */
+    font-size: 18px; 
     font-weight: 'lighter';
-    font-family: 'Interstate Mono'; /* Establece la fuente */
-    margin: 0; /* Elimina el margen predeterminado del párrafo */
+    font-family: 'Interstate Mono'; 
+    margin: 0; 
     margin-top: 40px;
     margin-left: 0;
     max-width: 30vw;
-    padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
+    padding: 10px; 
     transform: translateX(-200%);
     transition: transform 5s ease-out;
 }
@@ -260,14 +260,14 @@ header {
 .project_p3{
     color: #ffffff;
     background-color: rgb(0, 0, 0);
-    font-size: 18px; /* Tamaño de fuente deseado */
+    font-size: 18px; 
     font-weight: 'lighter';
-    font-family: 'Interstate Mono'; /* Establece la fuente */
-    margin: 0; /* Elimina el margen predeterminado del párrafo */
+    font-family: 'Interstate Mono'; 
+    margin: 0; 
     margin-top: 40px;
     margin-left: 0;
     max-width: 30vw;
-    padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
+    padding: 10px; 
     transform: translateX(-200%);
     transition: transform 5s ease-out;
 }
@@ -278,56 +278,56 @@ header {
 
 .section4 {
     height: 100vh;
-    width: 100vw; /* 100% del viewport width */
-    position: relative; /* Asegura que el position absolute del cornered-logo sea relativo a este contenedor */
+    width: 100vw; 
+    position: relative; 
     display: flex;
     align-items: left;
     justify-content: left;
     z-index: 3;
     Background-color: transparent;
-    border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
-    background-image: url('img/chibistories-porttrait.png'); /* Ruta de tu imagen de fondo */
-    background-size: cover; /* Cubre toda la pantalla */
-    background-position: center; /* Centra la imagen en el fondo */
-    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    border-bottom: 1px solid #ccc;
+    background-image: url('img/chibistories-porttrait.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .section5 {
     height: 100vh;
-    width: 100vw; /* 100% del viewport width */
-    position: relative; /* Asegura que el position absolute del cornered-logo sea relativo a este contenedor */
+    width: 100vw; 
+    position: relative;
     display: flex;
     align-items: left;
     justify-content: left;
     z-index: 3;
     Background-color: transparent;
-    border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
-    background-image: url('img/fanfest-porttrait.png'); /* Ruta de tu imagen de fondo */
-    background-size: cover; /* Cubre toda la pantalla */
-    background-position: center; /* Centra la imagen en el fondo */
-    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    border-bottom: 1px solid #ccc;
+    background-image: url('img/fanfest-porttrait.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .section6 {
     z-index: 3;
     height: 15cm;
-    width: 100vw; /* 100% del viewport width */
+    width: 100vw; 
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0; /* Puedes cambiar este color de fondo */
-    border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc; 
 }
 
 .section7 {
     z-index: 3;
     height: 15cm;
-    width: 100vw; /* 100% del viewport width */
+    width: 100vw; 
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(240, 240, 240); /* Puedes cambiar este color de fondo */
-    border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
+    background-color: rgb(240, 240, 240); 
+    border-bottom: 1px solid #ccc; 
 }
 
 @media screen and (max-width: 600px){/*960*/
@@ -341,31 +341,31 @@ header {
     .arrow-up-div-hidden {
         visibility: visible;
         position: fixed;
-        margin-top: 94.1vh; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        margin-top: 94.1vh;
         left: 30%;
     }
  
     .circle-div {
-        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        bottom: 10px; 
         left: 40%;
     }
     
     .arrow-down-div {
-        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        bottom: 10px;
         left: 50%;
     }
     
     .sq-div {
-        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        bottom: 10px; 
         left: 60%;
     }
     
     .section2_p{
         position: absolute;
-        margin: 0; /* Elimina el margen predeterminado del párrafo */
+        margin: 0; 
         margin-top: 100%;
-        padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
-        font-size: 22px; /* Tamaño de fuente deseado */
+        padding: 10px; 
+        font-size: 22px;
         background-color: rgba(0, 0, 0, 0.5);
         color: #ffffff;
      }
@@ -379,7 +379,7 @@ header {
 
     .menu-cont{
         display: flex;
-        position: absolute; /* Utilizando Flexbox para alinear elementos en una fila */
+        position: absolute; 
         justify-content: space-around;
         background-color: transparent;
         margin-top: 125%;
@@ -401,10 +401,10 @@ header {
         align-items: left;
         justify-content: left;
         z-index: 1;
-        background-image: url('img/on-stage-portrait-phone.png'); /* Ruta de tu imagen de fondo */
-        background-size: cover; /* Cubre toda la pantalla */
-        background-position: center; /* Centra la imagen en el fondo */
-        background-repeat: no-repeat; /* No repite la imagen de fondo */
+        background-image: url('img/on-stage-portrait-phone.png'); 
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
     }
 
     .sp3-item {
@@ -419,13 +419,13 @@ header {
     .project_p{
         color: #ffffff;
         background-color: rgb(0, 0, 0);
-        font-size: 18px; /* Tamaño de fuente deseado */
-        font-family: 'Interstate Mono'; /* Establece la fuente */
-        margin: 5%; /* Elimina el margen predeterminado del párrafo */
-        margin-top: 48vh;
+        font-size: 18px; 
+        font-family: 'Interstate Mono'; 
+        margin: 5%; 
+        margin-top: 45vh;
         margin-left: 0;
         max-width: 95vw;
-        padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
+        padding: 5px; 
         transform: translateX(-200%);
         transition: transform 1s ease-out;
     }
@@ -433,31 +433,20 @@ header {
     .project_p2{
         color: #ffffff;
         background-color: rgb(0, 0, 0);
-        font-size: 16px; /* Tamaño de fuente deseado */
-        font-weight: 'lighter';
-        font-family: 'Interstate Mono'; /* Establece la fuente */
-        margin: 0; /* Elimina el margen predeterminado del párrafo */
-        margin-bottom: 80%;
+        font-size: 16px; 
+        margin: 0; 
+        margin-bottom: 5%;
         margin-left: 0;
         max-width: 80vw;
-        padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
-        transform: translateX(-200%);
-        transition: transform 5s ease-out;
+        padding: 10px;
     }
 
     .project_p3{
-        color: #ffffff;
-        background-color: rgb(0, 0, 0);
-        font-size: 16px; /* Tamaño de fuente deseado */
-        font-weight: 'lighter';
-        font-family: 'Interstate Mono'; /* Establece la fuente */
-        margin: 0; /* Elimina el margen predeterminado del párrafo */
-        margin-bottom: 80%;
+        font-size: 16px; 
+        margin: 0; 
+        bottom: 0%;
         margin-left: 0;
         max-width: 80vw;
-        padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
-        transform: translateX(-200%);
-        transition: transform 5s ease-out;
     }
 
     .section4 {
@@ -465,10 +454,10 @@ header {
         display: flex;
         align-items: left;
         justify-content: left;
-        background-image: url('img/chibistories-porttrait-phone.png'); /* Ruta de tu imagen de fondo */
-        background-size: cover; /* Cubre toda la pantalla */
-        background-position: center; /* Centra la imagen en el fondo */
-        background-repeat: no-repeat; /* No repite la imagen de fondo */
+        background-image: url('img/chibistories-porttrait-phone.png');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
     }
 
     .section5 {
@@ -476,10 +465,10 @@ header {
         display: flex;
         align-items: left;
         justify-content: left;
-        background-image: url('img/fanfest-porttrait-phone.png'); /* Ruta de tu imagen de fondo */
-        background-size: cover; /* Cubre toda la pantalla */
-        background-position: center; /* Centra la imagen en el fondo */
-        background-repeat: no-repeat; /* No repite la imagen de fondo */
+        background-image: url('img/fanfest-porttrait-phone.png'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
     }
     
 }
@@ -488,22 +477,22 @@ header {
 @media screen and (min-width: 601px) and (max-width: 1024px){
 
     body {
-        background-position: right; /* Centra la imagen en el fondo */
+        background-position: right; 
     }
 
 
     .circle-div {
-        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        bottom: 10px; 
         left: 40%;
     }
     
     .arrow-down-div {
-        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        bottom: 10px; 
         left: 50%;
     }
     
     .sq-div {
-        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        bottom: 10px; 
         left: 60%;
     }
 
@@ -520,7 +509,7 @@ header {
         bottom: 40%;
         background-color: rgba(0, 0, 0, 0.5);
         margin-left: 0;
-        font-size: 42px; /* Tamaño de fuente deseado */
+        font-size: 42px; 
         color: #ffffff;
     }
 
@@ -547,31 +536,31 @@ header {
         display: flex;
         align-items: left;
         justify-content: left;
-        background-image: url('img/on-stage-portrait-phone.png'); /* Ruta de tu imagen de fondo */
-        background-size: cover; /* Cubre toda la pantalla */
-        background-position: center; /* Centra la imagen en el fondo */
-        background-repeat: no-repeat; /* No repite la imagen de fondo */
-        border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
+        background-image: url('img/on-stage-portrait-phone.png'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        border-bottom: 1px solid #ccc; 
     }
 
     .section4 {
         display: flex;
         align-items: left;
         justify-content: left;
-        background-image: url('img/chibistories-porttrait-phone.png'); /* Ruta de tu imagen de fondo */
-        background-size: cover; /* Cubre toda la pantalla */
-        background-position: center; /* Centra la imagen en el fondo */
-        background-repeat: no-repeat; /* No repite la imagen de fondo */
-        border-bottom: 1px solid #ccc; /* Borde inferior para separar las secciones */
+        background-image: url('img/chibistories-porttrait-phone.png'); 
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        border-bottom: 1px solid #ccc;
     }
 
     .section5 {
         height: 100vh;
-        width: 100vw; /* 100% del viewport width */
+        width: 100vw; 
         display: flex;
         align-items: left;
         justify-content: left;
-        background-image: url('img/fanfest-porttrait-phone.png'); /* Ruta de tu imagen de fondo */
+        background-image: url('img/fanfest-porttrait-phone.png'); 
         
         
     }
@@ -589,30 +578,24 @@ header {
     .project_p{
         color: #ffffff;
         background-color: rgb(0, 0, 0);
-        font-size: 22px; /* Tamaño de fuente deseado */
-        font-family: 'Interstate Mono'; /* Establece la fuente */
-        margin: 5%; /* Elimina el margen predeterminado del párrafo */
+        font-size: 22px; 
+        font-family: 'Interstate Mono'; 
+        margin: 5%; 
         margin-top: 48vh;
         margin-left: 0;
         max-width: 70vw;
-        padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
+        padding: 10px; 
         transform: translateX(-200%);
         transition: transform 1s ease-out;
     }
 
     .project_p2{
         color: #ffffff;
-        background-color: rgb(0, 0, 0);
-        font-size: 18px; /* Tamaño de fuente deseado */
-        font-weight: 'lighter';
-        font-family: 'Interstate Mono'; /* Establece la fuente */
-        margin: 0; /* Elimina el margen predeterminado del párrafo */
-        margin-bottom: 80%;
+        font-size: 18px; 
+        margin: 0; 
+        margin-bottom: 5%;
         margin-left: 0;
         max-width: 50vw;
-        padding: 10px; /* Añade un poco de espacio alrededor del párrafo si es necesario */
-        transform: translateX(-200%);
-        transition: transform 5s ease-out;
     }
     
 }
