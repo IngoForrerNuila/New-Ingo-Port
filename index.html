@@ -15,7 +15,7 @@
     
     </header>
 
-    <div class="section1" id="section1">
+    <div class="section1" id="section1" data-alt="sections" >
 
         <a href="#section2" id="logo-link">
             <img src="img/Ingo-logo-1.png" alt="Logo" class="centered-logo">
@@ -23,7 +23,7 @@
         
     </div>
 
-    <div class="section2" id="section2">
+    <div class="section2" id="section2" data-alt="sections">
         
         <div class="section2-text-cont" id="section2-text-cont">
             <div class="section2_p" id="section2_p">
@@ -41,10 +41,8 @@
 
     </div>
 
-    <div class="section3" id="section3">
-        <div class="arrow-up-div">
-            <!-- Puedes agregar una imagen de flecha aquí -->
-            <!-- Por ejemplo, asumiendo que tienes una imagen llamada "arrow-up.png" -->
+    <div class="section3" id="section3" data-alt="sections">
+        <div class="arrow-up-div" onclick="scrollToPrevious()">
             <img src="img/arrow-up.png" class="arrows" alt="Flecha hacia arriba">
         </div>
 
@@ -57,25 +55,21 @@
 
             <div class="project_p2" id="section3_p2">
                 Ich war verantwortlich für die Gestaltung des Unternehmensimages, der Struktur 
-                und des Inhalts des Magazins, sowohl physisch als auch digital: <a href="https://online.fliphtml5.com/qttfl/zosy/" class="sp3-item">ON STAGE MAGAZINE</a> 
+                und des Inhalts des Magazins, sowohl physisch als auch digital: <a href="https://online.fliphtml5.com/qttfl/zosy/" target="_blank" class="sp3-item">ON STAGE MAGAZINE</a> 
             </div>
         </div>
 
-        <div class="arrow-up-hidden-div">
-            <!-- Puedes agregar una imagen de flecha aquí -->
-            <!-- Por ejemplo, asumiendo que tienes una imagen llamada "arrow-up.png" -->
-            <img src="img/arrow-up.png" class="arrows" alt="Flecha hacia abajo">
+        <div class="arrow-up-hidden-div" onclick="scrollToPrevious()">
+            <img src="img/arrow-up.png" class="arrows" alt="Flecha hacia arriba">
         </div>
 
-        <div class="arrow-down-div">
-            <!-- Puedes agregar una imagen de flecha aquí -->
-            <!-- Por ejemplo, asumiendo que tienes una imagen llamada "arrow-up.png" -->
+        <div class="arrow-down-div" onclick="scrollToNext()">
             <img src="img/arrow-down.png" class="arrows" alt="Flecha hacia abajo">
         </div>
        
     </div>
 
-    <div class="section4" id="section4">
+    <div class="section4" id="section4" data-alt="sections">
         <div class="section3-text-cont" id="section4-text-cont">
             <div class="project_p" id="section4_p">
                 Im Juli 2023 startete ich ein persönliches Projekt namens ON STAGE. 
@@ -90,7 +84,7 @@
         </div>        
     </div>
 
-    <div class="section5" id="section5">
+    <div class="section5" id="section5" data-alt="sections">
         <div class="section3-text-cont" id="section5-text-cont">
             <div class="project_p" id="section5_p">
                 Im Juli 2023 startete ich ein persönliches Projekt namens ON STAGE. 
@@ -121,18 +115,44 @@
      });
     </script>
 
+        
+
     <script>
+        //Cada vez que recarge la pagina se carge en DIV1 - Section1//
         document.addEventListener("DOMContentLoaded", function() {
             document.querySelector("#section1").scrollIntoView({ behavior: 'auto' });
         });
     </script>
 
-    <!--<script>
+<!-- Esto Funciona para que los ARROWS FIXED escroleen Previamente o Continuamente --> 
+
+<script>
+    function scrollTo(direction) {
+        const currentPosition = window.scrollY;
+        const sections = document.querySelectorAll('[data-alt="sections"]');
+        const sectionArray = Array.from(sections);
+
+        let targetSection;
+
+        if (direction === 'previous') {
+            targetSection = sectionArray.reverse().find(section => section.getAttribute('data-alt') < currentPosition);
+        } else if (direction === 'next') {
+            targetSection = sectionArray.find(section => section.getAttribute('data-alt') > currentPosition);
+        }
+
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+</script>
+
+
+<!--<script>
      // JavaScript para posicionar la página en el primer div al recargar
      document.addEventListener("DOMContentLoaded", function() {
      document.querySelector("#section1").scrollIntoView();
      });
-    </script>-->
+</script>-->
 
 </body>
 </html>
