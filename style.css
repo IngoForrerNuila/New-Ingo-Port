@@ -156,6 +156,34 @@ header {
     background-repeat: no-repeat; /* No repite la imagen de fondo */
 }
 
+.arrow-up-div {
+    position: fixed;
+    top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.arrow-down-div {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.arrows{
+    width: 1.0cm;
+    height: 1.0cm;
+    animation: pulsate 1.5s infinite alternate; /* Define la animación llamada pulsate */
+}
+
+@keyframes pulsate {
+    to {
+      transform: scale(1.4); /* Reduce el tamaño al final de la animación */
+    }
+}
+
 .sp3-item {
     font-family: 'Interstate Mono';
     color: #45D8F3;
