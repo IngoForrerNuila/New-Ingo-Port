@@ -309,6 +309,26 @@ header {
 @media screen and (max-width: 600px){/*960*/
     body {
      background-position: right; /* Centra la imagen en el fondo */}
+
+     .arrow-up-div {
+        top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        left: 50%;
+    }
+    
+    .circle-div {
+        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        left: 40%;
+    }
+    
+    .arrow-down-div {
+        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        left: 50%;
+    }
+    
+    .sq-div {
+        bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        left: 60%;
+    }
     
     .section2_p{
         position: absolute;
