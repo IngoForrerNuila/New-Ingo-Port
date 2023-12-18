@@ -164,10 +164,19 @@ header {
     cursor: pointer;
 }
 
+.arrow-up-div-hidden {
+    visibility: hidden;
+    position: fixed;
+    top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
 .circle-div {
     position: fixed;
     bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
-    left: 45%;
+    left: 47%;
     transform: translateX(-50%);
     cursor: pointer;
 }
@@ -183,7 +192,7 @@ header {
 .sq-div {
     position: fixed;
     bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
-    left: 55%;
+    left: 53%;
     transform: translateX(-50%);
     cursor: pointer;
 }
@@ -309,12 +318,18 @@ header {
 @media screen and (max-width: 600px){/*960*/
     body {
      background-position: right; /* Centra la imagen en el fondo */}
-
-     .arrow-up-div {
-        top: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
-        left: 50%;
-    }
     
+    .arrow-up-div {
+        visibility: hidden;
+    } 
+
+    .arrow-up-div-hidden {
+        visibility: visible;
+        position: fixed;
+        top: 95.5%; /* Ajusta la distancia desde la parte superior según tus necesidades */
+        left: 30%;
+    }
+ 
     .circle-div {
         bottom: 10px; /* Ajusta la distancia desde la parte superior según tus necesidades */
         left: 40%;

@@ -173,6 +173,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+//--------------funcion arrow-up -hidden---------------//
+
+document.addEventListener('DOMContentLoaded', function() {
+  var arrows = document.querySelector('#arrow-up-hidden');
+  var section2 = document.getElementById('section2');
+
+  arrows.addEventListener('click', function() {
+    section2.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 //--------------funcion circle---------------//
 
 document.addEventListener('DOMContentLoaded', function() {
