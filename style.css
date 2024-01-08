@@ -310,8 +310,8 @@ header {
 
 .section6 {
     z-index: 3;
-    height: 15cm;
-    width: 100vw; 
+    height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,14 +321,49 @@ header {
 
 .section7 {
     z-index: 3;
-    height: 15cm;
+    height: 100vh;
     width: 100vw; 
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(240, 240, 240); 
-    border-bottom: 1px solid #ccc; 
+     
 }
+
+.footer {
+    z-index: 3;
+    height: 10vh;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 18px;
+    color: white; 
+    font-family: 'Interstate Mono';
+}
+
+.contact-links{
+    text-decoration: none;
+    color:white;
+}
+
+.logo-right-bottom{
+    height: 100% ;
+    width: 100%;
+    
+    
+}
+
+/*----------------MOBILE VISUAL SETTINGS---------------*/
 
 @media screen and (max-width: 600px){/*960*/
     body {
@@ -470,8 +505,38 @@ header {
         background-repeat: no-repeat; 
     }
     
+    .footer {
+        z-index: 3;
+        height: 10vh;
+        width: 100vw; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around; /* Ajusta según tu preferencia */
+        background-color: #45D8F3;
+    }
+    
+    .footer > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 11px;
+       
+    }
+    
+    .logo-right-bottom{
+        height: 50px;
+        width: 50px;
+    }
+
+
 }
 
+
+
+/*----------------TABLET VISUAL SETTINGS---------------*/
 
 @media screen and (min-width: 601px) and (max-width: 1024px){
 
