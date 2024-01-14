@@ -82,7 +82,7 @@ header {
     justify-content: center;
     background-color: #45D8F3;
     backdrop-filter: blur(10px);
-    filter:opacity(85%);
+    filter:opacity(90%);
     z-index: 5;
 }
 
