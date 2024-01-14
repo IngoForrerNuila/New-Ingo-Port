@@ -12,7 +12,6 @@ body {
     background-position: center; 
     background-attachment: fixed; 
     background-repeat: no-repeat; 
-    
 }
 
 @font-face {
@@ -23,13 +22,13 @@ body {
     src: url('fonts/TCB_____.TTF') format('truetype');
 }
 
-/* Define la animación llamada rotate */
+
 @keyframes rotate {
     0% {
-        transform: rotate(-50deg); /* Comienza sin rotación */
+        transform: rotate(-50deg); 
     }
     100% {
-        transform: rotate(360deg); /* Termina con 360 grados de rotación */
+        transform: rotate(360deg); 
     }
 }
 
@@ -75,8 +74,8 @@ header {
 }
 
 .section1 {
-    height: 100vh; /* 100% del viewport height */
-    width: 100vw; /* 100% del viewport width */
+    height: 100vh; 
+    width: 100vw; 
     display: flex;
     position: relative;
     align-items: center;
@@ -368,7 +367,8 @@ header {
 
 @media screen and (max-width: 600px){/*960*/
     body {
-     background-position: right; /* Centra la imagen en el fondo */}
+     background-position: right;
+    }
     
     .arrow-up-div {
         visibility: hidden;
@@ -513,7 +513,7 @@ header {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around; /* Ajusta según tu preferencia */
+        justify-content: space-around; 
         background-color: #45D8F3;
     }
     
