@@ -164,6 +164,14 @@ header {
     backdrop-filter: none;
 }
 
+.icono-bio{
+    max-width: 100%; 
+    max-height: 100%; 
+    width: 2cm;
+    height: 2cm;
+    backdrop-filter: none;
+}
+
 .section3 {
     height: 100vh;
     width: 100vw; 
@@ -469,7 +477,7 @@ header {
     .bio-title{
         width: 70vw;
         text-align: center;
-        margin-top: -60%;
+        margin-top: -65%;
         font-family: "Interstate Mono";
         font-size: 28px;
         color: #ffffff;
@@ -479,10 +487,16 @@ header {
     .bio-text{
         height: 50vh;
         width: 90vw;
-        margin-top: 5%;
+        margin-top: 3%;
         font-family: 'Tw Cen MT Condensed Extra Bold';
         font-size: 18px;
         color: rgba(255, 255, 255, 1);
+        backdrop-filter: none;
+    }
+
+    .icono-bio{
+        width: 1cm;
+        height: 1cm;
         backdrop-filter: none;
     }
 
