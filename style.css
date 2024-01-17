@@ -82,7 +82,7 @@ header {
     justify-content: center;
     background-color: #45D8F3;
     backdrop-filter: blur(10px);
-    filter:opacity(90%);
+    filter:opacity(85%);
     z-index: 5;
 }
 
@@ -94,7 +94,6 @@ header {
     align-items: left;
     justify-content: left;
     Background-color: transparent;
-    border-bottom: 1px solid #ccc; 
     z-index: 1;
 }
 
@@ -134,6 +133,36 @@ header {
 .menu-item:hover {
     color: black;
     text-decoration: none;
+}
+
+.biografie{
+    height: 100vh;
+    width: 100vw;
+    background-color: #45D8F3;
+    backdrop-filter: blur(10px);
+    filter:opacity(85%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-title{
+    font-family: "Interstate Mono";
+    font-size: 48px;
+    color: #ffffff;
+    backdrop-filter: none;
+
+}
+
+.bio-text{
+    height: 50vh;
+    width: 70vw;
+    margin-top: 5%;
+    font-family: 'Tw Cen MT Condensed Extra Bold';
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    backdrop-filter: none;
 }
 
 .section3 {
